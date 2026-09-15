@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligence Designed To Evolve</title>
+  <meta name="description" content="Build applications that reason, adapt and collaborate using Orbit modular AI platform designed for production." />
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Full-viewport Cover Video Container -->
+  <div class="bg">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+
+  <main class="page">
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo Button -->
+      <button class="logo-btn" aria-label="Orbit AI Home">
+        <img src="assets/logo.webp" alt="" width="52" height="52" class="logo-img" />
+      </button>
+
+      <!-- Desktop Nav Pill -->
+      <nav class="nav-pill" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Sign In -->
+      <a href="#signin" class="btn-signin">Sign in</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger-bar bar-1"></span>
+        <span class="burger-bar bar-2"></span>
+        <span class="burger-bar bar-3"></span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Trust Row -->
+      <div class="trust-row anim" style="--d: 0.05s;">
+        <div class="avatars-group">
+          <div class="avatar-ring avatar-1">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+          </div>
+          <div class="avatar-ring avatar-2">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-amazon"></i>
+            </div>
+          </div>
+          <div class="avatar-ring avatar-3">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+        </div>
+        <div class="trust-pill">
+          <span>Trusted by 2000+ Enterprises</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="headline anim">
+        <span class="line-1">Intelligence</span>
+        <span class="line-2">Designed To Evolve</span>
+      </h1>
+
+      <!-- Subhead -->
+      <p class="subhead anim" style="--d: 0.28s;">
+        Build applications that reason, adapt and collaborate using a modular AI platform designed for production.
+      </p>
+
+      <!-- CTA Button -->
+      <div class="cta-wrapper anim" style="--d: 0.4s;">
+        <a href="#get-started" class="cta-btn">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Stats Footer -->
+    <footer class="stats-footer">
+      <div class="stat-card anim" style="--d: 0.5s;" data-target="120" data-suffix="ms" data-decimals="0">
+        <span class="stat-icon">&lt;</span>
+        <div class="stat-body">
+          <span class="stat-value">0ms</span>
+          <span class="stat-label">Inference Time</span>
+        </div>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.58s;" data-target="99.99" data-suffix="%" data-decimals="2">
+        <span class="stat-icon">%</span>
+        <div class="stat-body">
+          <span class="stat-value">0.00%</span>
+          <span class="stat-label">Platform Uptime</span>
+        </div>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.66s;" data-target="24" data-suffix="/7" data-decimals="0">
+        <span class="stat-icon">*</span>
+        <div class="stat-body">
+          <span class="stat-value">0/7</span>
+          <span class="stat-label">Autonomous Runtime</span>
+        </div>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.74s;" data-target="2.4" data-suffix="M" data-decimals="1">
+        <span class="stat-icon">#</span>
+        <div class="stat-body">
+          <span class="stat-value">0M</span>
+          <span class="stat-label">Context Windows</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Drawer Overlay & Sheet Menu -->
+    <div class="mobile-overlay" id="mobileOverlay" hidden></div>
+    <div class="mobile-sheet" id="mobileMenu" hidden>
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-link active" style="--i: 1;">Home</a>
+        <a href="#product" class="mobile-link" style="--i: 2;">Product</a>
+        <a href="#case-studies" class="mobile-link" style="--i: 3;">Case Studies</a>
+        <a href="#contact" class="mobile-link" style="--i: 4;">Contact</a>
+        <a href="#signin" class="mobile-signin" style="--i: 5;">Sign in</a>
+      </nav>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
